@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guest Signup</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.signup {
+    background-image: url(pic/bg.png);
+    background-size: cover;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 1000px;
+    height: 1300px;
+    text-align: center;
+    border: solid;
+    border-color: yellow;
+}
+h1 {
+    padding-top: 100px;
+}
+h2 {
+    color: yellow;
+    font-size: 75px;
+    text-shadow: 2px 2px 4px #ff0000;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+input[type="radio"] {
+    float:left;
+}
+p {
+    font-size: 17px;
+    font-family: sans-serif;
+    text-align: left;
+    color: white;
+    margin-top: 5px;
+}
+.button1 {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: red;
+    color: yellow;
+    border: solid;
+    border-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.button2 {
+    background-color: transparent;
+    width: 500px;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+    color: yellow;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+    border-radius: 25px;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+    <div class="signup">
+        <h1><img src="pic/logo.png" alt="Libis GYM" style="width: 175px; height:175px; margin-bottom: 3px;"></h1>
+        <h2>Libis GYM</h2>
+        <h3>Want to become a member of our GYM? Then start filling our form to complete registration.</h3>
+        <form id="signupForm">
+            <label for="fName">Firstname:</label>
+            <input type="text" id="fname" name="fName" placeholder="Juan">
+            <label for="lname">Lastname:</label>
+            <input type="text" id="lname" name="lName" placeholder="Dela Cruz">
+            <label for="phone">Contact Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="0912-345-6789" required>
+            <label type="Birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="Birthdate" required>
+            <label for="gender" id="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Female">Other</option>
+            </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
+            <label for="Password">Password:</label>
+            <input type="password" id="password" name="Password" required>
+            <a href="dashboard.html">
+                <button class="button1">Submit</button>
+            </a>
+        </form>
+        <a href="glogin.html">
+            <button class="button2">I already have an account?</button>
+        </a>
+    </div>
+</body>
+</html>
